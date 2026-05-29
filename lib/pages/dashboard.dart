@@ -3,6 +3,7 @@ import 'package:latihan6/pertemuan/pertemuan5.dart';
 import 'package:latihan6/pertemuan/pertemuan6.dart';
 import 'package:latihan6/pertemuan/pertemuan7.dart';
 import 'package:latihan6/pertemuan/pertemuan8.dart';
+import 'package:latihan6/pertemuan/pertemuan9.dart';
 
 class DashboardPage extends StatelessWidget {
   final List<Map<String, dynamic>> menuItems = [
@@ -29,6 +30,12 @@ class DashboardPage extends StatelessWidget {
       "icon": Icons.auto_stories,
       "color": Colors.purple,
       "page": AutocompletespinPage(),
+    },
+    {
+      "title": "Pertemuan 9",
+      "icon": Icons.calendar_month,
+      "color": const Color(0xFF6C63FF),
+      "page": const Pertemuan9Page(),
     },
   ];
 
