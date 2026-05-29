@@ -78,8 +78,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   children: [
                     Opacity(
                       opacity: 0.9,
-                      child: Image.network(
-                        'https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                      child: Image.asset(
+                        'assets/images/header.jpg',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -323,9 +323,7 @@ class _ProfilePageState extends State<ProfilePage> {
     } else if (avatarUrl != null && avatarUrl!.isNotEmpty) {
       return NetworkImage(avatarUrl!);
     } else {
-      return const NetworkImage(
-        'https://images.unsplash.com/photo-1452570053594-1b985d6ea890?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      );
+      return const AssetImage('assets/images/profile.jpeg');
     }
   }
 
@@ -931,9 +929,7 @@ class _EditProfileSheetState extends State<EditProfileSheet> {
     } else if (avatarUrl != null && avatarUrl!.isNotEmpty) {
       return NetworkImage(avatarUrl!);
     } else {
-      return const NetworkImage(
-        'https://images.unsplash.com/photo-1452570053594-1b985d6ea890?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      );
+      return const AssetImage('assets/images/profile.jpeg');
     }
   }
 

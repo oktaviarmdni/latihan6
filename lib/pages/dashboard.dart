@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:latihan6/pertemuan/pertemuan5.dart';
 import 'package:latihan6/pertemuan/pertemuan6.dart';
-//import 'package:latihan6/pertemuan/pertemuan7.dart';
-//import 'package:latihan6/pertemuan/pertemuan8.dart';
+import 'package:latihan6/pertemuan/pertemuan7.dart';
+import 'package:latihan6/pertemuan/pertemuan8.dart';
 
 class DashboardPage extends StatelessWidget {
   final List<Map<String, dynamic>> menuItems = [
@@ -10,7 +10,7 @@ class DashboardPage extends StatelessWidget {
       "title": "Pertemuan 5",
       "icon": Icons.auto_stories,
       "color": Colors.blue,
-      "page": ListViewPage(),
+      "page": ListviewPage(),
     },
     {
       "title": "Pertemuan 6",
@@ -22,13 +22,13 @@ class DashboardPage extends StatelessWidget {
       "title": "Pertemuan 7",
       "icon": Icons.auto_stories,
       "color": Colors.orange,
-      //"page": RadioButtonPage(),
+      "page": RadiobuttonPage(),
     },
     {
       "title": "Pertemuan 8",
       "icon": Icons.auto_stories,
       "color": Colors.purple,
-      //"page": AutocompleteSpinPage(),
+      "page": AutocompletespinPage(),
     },
   ];
 
